@@ -16,7 +16,7 @@ func main() {
 	writer := multipart.NewWriter(buffer)
 
 	get_boundary := writer.Boundary()
-	_ = writer.WriteField("is_multiple", "1")
+	_ = writer.WriteField("is_multi", "1")
 	_ = writer.WriteField("model", "anime_model_lovelive")
 
 	h := make(textproto.MIMEHeader)
